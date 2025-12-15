@@ -1,19 +1,19 @@
 {
-  "name": "homebridge-network-presence",
+  "name": "@potterdai/homebridge-network-presence",
   "version": "1.2.3",
   "description": "Homebridge plugin that provides occupancy sensors for devices presence in your network",
   "main": "index.js",
   "keywords": [
     "homebridge-plugin"
   ],
-  "homepage": "https://github.com/nitaybz/homebridge-network-presence#readme",
+  "homepage": "https://github.com/potterdai/homebridge-network-presence#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nitaybz/homebridge-network-presence.git"
+    "url": "git+https://github.com/potterdai/homebridge-network-presence.git"
   },
   "bugs": {
-    "url": "https://github.com/nitaybz/homebridge-network-presence/issues"
+    "url": "https://github.com/potterdai/homebridge-network-presence/issues"
   },
   "engines": {
     "node": ">=10.17.0",
@@ -25,19 +25,5 @@
   "scripts": {
     "start": "homebridge --plugin-path ./",
     "debug": "DEBUG=* homebridge --debug --plugin-path ./"
-  },
-  "funding": [
-    {
-      "type": "paypal",
-      "url": "https://paypal.me/nitaybz"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/nitaybz"
-    },
-    {
-      "type": "kofi",
-      "url": "https://ko-fi.com/nitaybz"
-    }
-  ]
+  }
 }
