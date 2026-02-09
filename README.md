@@ -42,6 +42,7 @@ If you don't use Homebridge UI or HOOBS, keep reading:
         "platform": "NetworkPresence",
         "interval": 10,
         "threshold": 15,
+        "skipPing": true,
         "addressRange": "10.0.0.1-10.0.0.120",
         "anyoneSensor": true,
         "devices": [ 
@@ -74,6 +75,7 @@ If you don't use Homebridge UI or HOOBS, keep reading:
 | `platform`  | always `"NetworkPresence"` |     -    |  String  |
 | `interval`  |  Time in seconds between status polling for connected devices   |  `10` |  Integer |
 | `threshold`  |  Time in minutes to wait before updating 'disconnected' status. important for not spamming your notifications or wrongly activating automation because the device has gone from the network for short time   |  `15` |  Integer |
+| `skipPing`  |  **Recommended for iOS/Mobile Devices**: When `true`, skips pinging devices and relies on ARP table directly. Better for mobile devices that sleep intermittently. May add 2-5 minutes to disconnection detection but prevents false disconnects.   |  `true` |  Boolean |
 | `addressRange`  |  (Optional) Define the address range of your devices to speed up discovery (e.g. "10.0.0.0/24", "10.0.0.1-10.0.0.30")   |   -   |  String |
 | `anyoneSensor`       |  When set to `true`, the plugin will create extra accessory named "Anyone" to represent if ANY of the devices is detected        |  `false` |  Boolean  |
 | `debug`       |  When set to `true`, the plugin will produce extra logs for debugging purposes        |  `false` |  Boolean  |

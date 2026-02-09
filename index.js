@@ -22,6 +22,7 @@ class NetworkPresence {
 		this.devicesConfig = config.devices || []
 		this.debug = config.debug || false
 		this.range = config.addressRange || ''
+		this.skipPing = config.skipPing !== undefined ? config.skipPing : true
 
 		
 		// define debug method to output debug logs when enabled in the config

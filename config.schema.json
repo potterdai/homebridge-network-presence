@@ -31,6 +31,13 @@
               "minimum": 0,
               "maximum": 60
           },
+          "skipPing": {
+              "title": "Skip Ping (Recommended for iOS/Mobile Devices)",
+              "description": "When enabled, relies on ARP table directly instead of pinging devices. Better for mobile devices that sleep intermittently. May add 2-5 minutes to disconnection detection.",
+              "type": "boolean",
+              "default": true,
+              "required": false
+          },
           "anyoneSensor": {
               "title": "Enable Anyone Sensor",
               "description": "When checked, the plugin will create extra accessory named \"Anyone\" to represent if ANY of the devices is detected",
@@ -106,6 +113,9 @@
       },
       {
         "key": "threshold"
+      },
+      {
+        "key": "skipPing"
       },
       {
         "key": "anyoneSensor"
